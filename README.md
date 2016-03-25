@@ -118,6 +118,8 @@ The properties you can configure are as follows.
 
 **o) disableWeekdays**(Optional) : Accepts array of numbers starting from 0(Sunday) to 6(Saturday). If you specify any values for this array, then it will disable that week day in the whole calendar. For example if you pass [0,6], then all the Sundays and Saturdays will be disabled.
 
+**p) enableTimes**(Optional) : Boolean to specify whether to show the time selected block or not. The default values is `false`.
+
 5) Inject `ionicdatetimepicker` in the controller, where you wish to use this component. Then using the below method you can call the datetimepicker.
 ````javascript
 .controller('HomeCtrl', function ($scope, ionicdatetimepicker) {
@@ -168,41 +170,6 @@ The first screen shot shows the popup and the second shows the modal of this plu
 ### Android : 
 <img src="https://lh3.googleusercontent.com/iMB88WThVW9om9EwFTaXprMWCXjbm9dm5A9aGjC497seWtX37rjzxynRrnVRYgXN9ORy5gjzhKilgdlt-eB53cXIAovFgqicuJ4UXn-HkLNZflkenUM6_k-sbK-GkNCzCfB1rd3wD5m0zgJ5dhJ3CniDUNKygQbo5f4W7JldSz93nVzdOb3OLqgcmZFeSY-FeWdovQi6zYttUPOaem5_47vF2ikt-ZW6H5UL0FI4WGcJSeAdu7wNsdoE5KY_oQfBTpsbl24eUrTxYPXhoNpcUNxRXjGnF31tDWD-jTEOJZZ9lqTnEK3OZ0g4Rci5jeq_wDmOfT0A11HXICbyL9asAPvB6TNrcOWj_qGUIrJtPeiaRDDgk8GYM2gVBY23xiOW3K5lERIfn6HTSNsZCbQciV0oFBROL3wHNuNGA-3mot_jP9ZJgyHz7f0VrWg5fytot3nDB2Gp4bMWsjXk-VOWoCP3lHc75vOvhOZb1ybemB95JI0RiYCdJMaytjzFWPsS5i3J1yEk0FS4PMyH1HEhYPPB48Et9ullJodL9nxDLvpTxJYzf8yqwC_V-pic-WHNgm9f=w382-h678-no" width="360" height="640" />
 <img src="https://lh3.googleusercontent.com/GzTwRh3IHzF9UieGIJTbQwTIosA101q32OSXEcgDFj7GdG7vHvs9Vj5DpWLj0HOny-zqM6zNRdqAkWlgZv_CnpqLEZNX9EP86xFkknkdtFczd6_63XmlsPgbCiArWAqtVpzjZuhfxPujbm_b52hfyAEBBvNOTrd7VcHmVsZYiwoqVggRYyaOxvEobVxTOF7eB0iXiNIBSnOIFcwla8y9nDFJp2ilgBiMCuI7gEuVW95axHlouFOhyOBILG1u-tO28oLXvqxBnWbZDjjciaKJtB8xBZLH5TsIxyH477dMjTr6SYaykZA1tBHHFlgM9AwrWsnCmaPyP1hNIanCEeuemy9Stt5_2Y5u3el7AwUqGQ7C2ZSYs9nJ0ezHhfTJnF7bpONNWVhHE3G6XpuwKOStUdTli70_mWV8Hx_Ennwdh5FrnjLTnltUve4VCtv3sWNxBxN9_rcwymLneeWIB8X1y8E_ulzxQcMG6YJ3Cf-1WrMRTOR-3SQBgm4R0MQjSau1hgYie6u35dIb0h2FirT540xs4EvUWzT8w4Pv6r9Cze5EsgSHAK54F1In8SG8VtBUCQj4=w382-h678-no" width="360" height="640" />
-
-
-##CSS Classes:
-
-###popup
-<img src="https://lh3.googleusercontent.com/ftY-EzWLPO4T86ZqF3npN8_cCM2Ao4hRZPiZymEsz7GCrVE3n0rpvAY6PSd94OGShYBIU5ANidRzG8p0euPwnxdVus4enOragUmXTh33EWpbYZRbMp6xjlCqmNCj1lh0jJPXbeHOo-xLDdLu0_txwv8WooCwa3mV9BpQ1e1k8gxIuhhJ-R35IXl1UmL_1uL4Wp1K2HQ7qsWiNKgSHuDLRMRS8OqnYDmcOn4nbSikiHW0a0TBID8lyW81A_CzdWxPiHu6TGvS_EqL9u28-Nl-n1lvqeNaURm5m77FfGXH5MMB9u120TSmavSkbo3Hn4s1AmPJ-CZjQ2pHJGxnQpCVU-jEfHXnDugPJSQWlhEWLmdCYA2e2UOoY_qFZ8g7Z_IuDLQfW3HO6V-XQKL1FSJ9dCHuspOoeuMS9HQ6p-fKMv_rET1q91na3bnvUeeLE_w-gKg2WBJRz-L2rlZW56siWRKfuD2KaVay22E23b0q_pNX2ix1K6vTRvOTDbqSmN-j6CjGUpZO51oSWa1eXAc8PAVo-uqbbzGlOYW53rcUJbx-lEktEmtGewpK8_zC5rwTZ7lj=w382-h678-no" width="360" height="640" />
-
-#### 1) prev_btn_section
-#### 2) next_btn_section
-#### 3) select_section
-#### 4) month_select
-#### 5) year_select
-#### 6) calendar_grid
-#### 7) weeks_row
-#### 8) selected_date
-#### 9) date_col
-#### 10) today
-
-###modal
-<img src="https://lh3.googleusercontent.com/A_9xjUI3dXgZsOVVmujQQSs2XtCA1H0Le7m6trVxLPBFcfy8rx5L-_PU1G7iWApIi3IwtzBqclGbL4gDgCgKJA7i-FadbYAa21QCXTRwoX8J-ioJWV7CgXtmUDuiwc_OFrNbvyORzLZEY40aYJNTuRBZ_jWUL-R-Bpxf_cEKCtOCJdzi0tDz_XFAhzc3OL_jNSwKROpQQsyBcOTVFkFsWgQaataoH6D1lKjtyvh_Mc5NO-2xhXXASrCiW7TMFImJzEYeYKNdmCS_dY-4lAvJ2jGkkRZAvhs5XcB0Bv--CYub7hTNEtVXHpTYpatKkytNuaMQWk32UO6TU4IhJzFfW3IgXxwcU0-BcINOq27JBtysmdKa2GgFMwNXz1KrDQPfv6M6_QZ6SXoV8-w7LX9Dvh0fM3e6FMCNADMAc4r1g8Y8I8q2vaXaPmiMfaCAwPc4yfY4J1s4uzspYu9M5qZ39_sEvNjnjdAIPBuDgyYwJ2ceRhA3NBhidM6RGYZWT6RC8vfTHU2gcNcoOLqJ1_Yb1e24sN2cVT0Z6q20GNefCiflstMxl_AE-y1Mw6muxu4bnY8m=w382-h678-no" width="360" height="640" />
-
-#### 1) left_arrow
-#### 2) right_arrow
-
-Other classes are same as the popup classes. You can use any one of the below classes to customise popup and modal css respectively.  
-####ionic_datetimepicker_popup
-####ionic_datetimepicker_modal
-
-The css class names for the buttons are as follows
-
-a) For `Set` button the class name is `button_set` 
-
-b) For `Today` button the class name is `button_today`
- 
-c) For `Close` button the class name is `button_close` 
 
 ##Versions:
 
