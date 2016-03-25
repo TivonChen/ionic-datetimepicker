@@ -1,0 +1,21 @@
+{
+  "name": "ionic-datetimepicker",
+  "version": "1.0.0",
+  "description": "A date time picker for ionic framework",
+  "main": [
+    "./dist/ionic-datetimepicker.bundle.min.js"
+  ],
+  "scripts": {},
+  "author": "tivon",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "*",
+    "del": "*",
+    "gulp-concat": "*",
+    "gulp-css2js": "*",
+    "gulp-minify-html": "*",
+    "gulp-ng-html2js": "*",
+    "gulp-uglify": "*"
+  }
+}

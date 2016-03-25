@@ -1,0 +1,30 @@
+{
+  "name": "ionic-datetimepicker",
+  "version": "1.0.0",
+  "authors": [
+    "tivon"
+  ],
+  "description": "A date time picker for ionic framework",
+  "main": [
+    "./dist/ionic-datetimepicker.bundle.min.js"
+  ],
+  "keywords": [
+    "ionic-datetimepicker",
+    "ionic",
+    "datetimepicker",
+    "datetimepicker for ionic",
+    "datetimepicker for ionic framework"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/TivonChen",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ionic": ">=0.9.27"
+  }
+}
