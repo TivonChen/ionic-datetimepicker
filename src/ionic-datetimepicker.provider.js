@@ -266,11 +266,9 @@ angular.module('ionic-datetimepicker.provider', [])
                     $scope.mainObj = angular.extend({}, config, ipObj);
                     if ($scope.mainObj.from) {
                         $scope.fromDate = resetHMSM(new Date($scope.mainObj.from)).getTime();
-                        console.log($scope.fromDate);
                     }
                     if ($scope.mainObj.to) {
                         $scope.toDate = resetHMSM(new Date($scope.mainObj.to)).getTime();
-                        console.log($scope.toDate);
                     }
 
                     if (ipObj.disableWeekdays && config.disableWeekdays) {

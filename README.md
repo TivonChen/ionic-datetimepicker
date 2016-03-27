@@ -176,3 +176,6 @@ The first screen shot shows the popup and the second shows the modal of this plu
 ### v0.1.0
 fork from rajeshwarpatlolla's ionic-datepicker for own use.
 
+### v0.2.0
+modify popup, support time select.
+
