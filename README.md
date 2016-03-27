@@ -40,7 +40,7 @@ angular.module('mainModuleName', ['ionic', 'ionic-datetimepicker']){
 Your config method may look like this if you wish to setup the configuration. But this is not mandatory step.
 
 ````javascript
-.config(function (ionicdatetimepickerProvider) {
+.config(function (ionicDateTimePickerProvider) {
     var datetimepickerObj = {
       inputDate: new Date(),
       setLabel: 'Set',
@@ -57,7 +57,7 @@ Your config method may look like this if you wish to setup the configuration. Bu
       closeOnSelect: false,
       disableWeekdays: [6],
     };
-    ionicdatetimepickerProvider.configdatetimepicker(datetimepickerObj);
+    ionicDateTimePickerProvider.configdatetimepicker(datetimepickerObj);
   })
 ````
 In the above code i am not configuring all the properties, but you can configure as many properties as you can.
@@ -182,5 +182,5 @@ modify popup, support time select.
 ### v0.3.0
 add close method.
 
-### v0.3.0
+### v0.4.0
 modify css to avoid time swith problem, modify close method, popup hide today when showToday is 'false'.
