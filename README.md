@@ -120,9 +120,9 @@ The properties you can configure are as follows.
 
 **p) enableTimes**(Optional) : Boolean to specify whether to show the time selected block or not. The default values is `false`.
 
-5) Inject `ionicdatetimepicker` in the controller, where you wish to use this component. Then using the below method you can call the datetimepicker.
+5) Inject `ionicDateTimePicker` in the controller, where you wish to use this component. Then using the below method you can call the datetimepicker.
 ````javascript
-.controller('HomeCtrl', function ($scope, ionicdatetimepicker) {
+.controller('HomeCtrl', function ($scope, ionicDateTimePicker) {
 
     var ipObj1 = {
       callback: function (val) {  //Mandatory
@@ -146,8 +146,8 @@ The properties you can configure are as follows.
       templateType: 'popup'       //Optional
     };
   
-    $scope.opendatetimepicker = function(){
-      ionicdatetimepicker.opendatetimepicker(ipObj1);
+    $scope.openDateTimePicker = function(){
+      ionicDateTimePicker.openDateTimePicker(ipObj1);
     };
 };
 ````
@@ -179,3 +179,5 @@ fork from rajeshwarpatlolla's ionic-datepicker for own use.
 ### v0.2.0
 modify popup, support time select.
 
+### v0.3.0
+add close method.
