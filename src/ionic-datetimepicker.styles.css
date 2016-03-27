@@ -57,6 +57,7 @@
 }
 
 .ionic_datepicker_popup .selected_time {
+    border: 1px solid #8666ff;
     background-color: #8666ff;
     color: #fff;
     font-weight: bold;
@@ -64,6 +65,7 @@
 }
 
 .ionic_datepicker_popup .time_pointer_events_none {
+    border: 1px solid #cccccc;
     pointer-events: none;
     color: #666666 !important;
     background-color: #cccccc;
@@ -218,7 +220,19 @@
     color: #aaaaaa !important;
 }
 
+.ionic_datepicker_modal .unselected_time {
+    border: 1px solid #8666ff;
+}
+
+.ionic_datepicker_modal .selected_time {
+    border: 1px solid #8666ff;
+    background-color: #8666ff;
+    color: #fff;
+    font-weight: bold;
+}
+
 .ionic_datepicker_modal .time_pointer_events_none {
+    border: 1px solid #cccccc;
     pointer-events: none;
     color: #666666 !important;
     background-color: #cccccc;

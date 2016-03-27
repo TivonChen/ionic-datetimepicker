@@ -181,3 +181,6 @@ modify popup, support time select.
 
 ### v0.3.0
 add close method.
+
+### v0.3.0
+modify css to avoid time swith problem, modify close method, popup hide today when showToday is 'false'.

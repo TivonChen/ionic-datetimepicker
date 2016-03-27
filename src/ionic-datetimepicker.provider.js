@@ -253,11 +253,8 @@ angular.module('ionic-datetimepicker.provider', [])
                 }
 
                 function close() {
-                    if ($scope.mainObj.templateType.toLowerCase() == 'popup') {
-                        $scope.popup.close();
-                    } else {
-                        closeModal();
-                    }
+                    $scope.popup && $scope.popup.close();
+                    $scope.modal && $scope.modal.hide();
                 }
 
                 $scope.closeIonicDatePickerModal = function () {

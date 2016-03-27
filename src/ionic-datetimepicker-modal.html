@@ -75,8 +75,8 @@
                 <div class="row padding_zero full-height">
                     <div class="col col-50 padding_zero full-width-height" ng-repeat="time in times">
                         <div class="time-block"
-                             ng-class="{'selected_date': (currentTimeStatus.status[$index] && timeSelectedIndex == $index),
-                              'today': (currentTimeStatus.status[$index] && timeSelectedIndex != $index),
+                             ng-class="{'selected_time': (currentTimeStatus.status[$index] && timeSelectedIndex == $index),
+                              'unselected_time': (currentTimeStatus.status[$index] && timeSelectedIndex != $index),
                              'time_pointer_events_none': (!currentTimeStatus.status[$index])}"
                              ng-click="timeSelected($index)">
                             <div class="time_table padding_zero">
