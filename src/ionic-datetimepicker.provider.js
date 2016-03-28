@@ -19,11 +19,11 @@ angular.module('ionic-datetimepicker.provider', [])
             disableWeekdays: []
         };
 
-        this.configDatePicker = function (inputObj) {
+        this.configDateTimePicker = function (inputObj) {
             angular.extend(config, inputObj);
         };
 
-        this.$get = ['$rootScope', '$ionicPopup', '$ionicModal', 'IonicDateTimepickerService', '$filter',
+        this.$get = ['$rootScope', '$ionicPopup', '$ionicModal', 'IonicDateTimePickerService', '$filter',
             function ($rootScope, $ionicPopup, $ionicModal, IonicDatepickerService, $filter) {
 
                 var provider = {};

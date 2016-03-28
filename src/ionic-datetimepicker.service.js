@@ -1,6 +1,6 @@
 angular.module('ionic-datetimepicker.service', [])
 
-  .service('IonicDateTimepickerService', function () {
+  .service('IonicDateTimePickerService', function () {
 
     this.monthsList = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
