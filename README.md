@@ -1,4 +1,4 @@
-[![bitHound Score](https://www.bithound.io/github/rajeshwarpatlolla/ionic-datetimepicker/badges/score.svg)](https://www.bithound.io/github/rajeshwarpatlolla/ionic-datetimepicker)
+[![bitHound Overall Score](https://www.bithound.io/github/TivonChen/ionic-datetimepicker/badges/score.svg)](https://www.bithound.io/github/TivonChen/ionic-datetimepicker)
 
 ##Introduction:
 
@@ -18,9 +18,9 @@ This plugin is completely open source. Please rate this plugin @ [Ionic Market](
 
 `bower install ionic-datetimepicker --save`
 
-This will install the latest version of this plugin. If you wish to install any specific version(eg : 0.9.0) then
+This will install the latest version of this plugin. If you wish to install any specific version(eg : 0.4.0) then
  
-`bower install ionic-datetimepicker#0.9.0 --save`
+`bower install ionic-datetimepicker#0.4.0 --save`
 
 2) Specify the path of  `ionic-datetimepicker.bundle.min.js` in your `index.html` file.
 
@@ -41,7 +41,7 @@ Your config method may look like this if you wish to setup the configuration. Bu
 
 ````javascript
 .config(function (ionicDateTimePickerProvider) {
-    var datetimepickerObj = {
+    var obj = {
       inputDate: new Date(),
       setLabel: 'Set',
       todayLabel: 'Today',
@@ -57,7 +57,7 @@ Your config method may look like this if you wish to setup the configuration. Bu
       closeOnSelect: false,
       disableWeekdays: [6],
     };
-    ionicDateTimePickerProvider.configdatetimepicker(datetimepickerObj);
+    ionicDateTimePickerProvider.configDateTimePicker(obj);
   })
 ````
 In the above code i am not configuring all the properties, but you can configure as many properties as you can.
@@ -162,6 +162,8 @@ In all the above steps the only mandatory thing is the `callback` where you will
 Once you are successfully done with the above steps, you should be able to use this plugin.
 
 The first screen shot shows the popup and the second shows the modal of this plugin.
+
+The images below is copied from ionic-datepicker.
 
 ### iOS : 
 <img src="https://lh3.googleusercontent.com/F9gGrtafX2G6sIO2Fi62R_SVPBb0dRACiksw-4wNX7lcIbuI40AAodBbko72VMZ8YD5ecg5sCXi6soWWgWuVMtuwd21nRlU8dnkPHR3P8Xw-OZ19Ryt3VBNItI7UP7acA1SJZQPpp-wzPBRaYh-CAAExJ0TCgMT_05h7_OzWS5gTjxk81jqzGL0uE_L0SLq0u57orjzgBWIm1PfcKmczNIU_Dhgqp01yWEP-6ytgJOrKVrr9OXlfrBKm_urdF6W8qg1RrkH_IRDS0hv3sRi2co1doLUMDxZyAO5JUYnRf4WVTttffFdNMSq1LFVldMdwjU7PRWft-_I9lLHX5IvOyYiOhYu9vvkJE29MF3GMW7rYZMf11qABKL8lYWPCJ4GZfG0NJI6u2n52tXd9ZVUl1s_p2H2CnWdlnaSyrfevQDRfO0ej2C6-NceeMAwX16m24GzMnD5xgO7hk6XMG0rZuBNfGvFextvIzOyj6L8W4VRXzaUYlUelM84zDSU5Av8jXHVr-4A8ymqJZniQlYpDsUHIHbFddemlIuIxh4kTSQA0iifTwJ_pGTFESyzrAIGiGQS8=w382-h678-no" width="320" height="568" />
