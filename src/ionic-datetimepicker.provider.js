@@ -19,6 +19,12 @@ angular.module('ionic-datetimepicker.provider', [])
             disableWeekdays: []
         };
 
+        var DEFAULT_TIMES = [
+            {title: "上午", range: "08:00-12:00"},
+            {title: "下午", range: "14:00-18:00"}
+        ];
+        var DEFAULT_TIME_INDEX = -1;
+
         this.configDateTimePicker = function (inputObj) {
             angular.extend(config, inputObj);
         };
@@ -70,6 +76,7 @@ angular.module('ionic-datetimepicker.provider', [])
                     $scope.selctedDateEpoch = selectedDate.epoch;
 
                     $scope.currentTimeStatus = getCurrentTimeStatus();
+                    $scope.timeSelectedIndex = DEFAULT_TIME_INDEX;
 
                     if ($scope.mainObj.closeOnSelect) {
                         $scope.mainObj.callback($scope.selctedDateEpoch);
@@ -282,11 +289,8 @@ angular.module('ionic-datetimepicker.provider', [])
                         $scope.mainObj.showToday = ipObj.showToday.concat(config.showToday);
                     }
 
-                    $scope.times = [
-                        {title: "上午", range: "08:00-12:00"},
-                        {title: "下午", range: "14:00-18:00"}
-                    ];
-                    $scope.timeSelectedIndex = -1;
+                    $scope.times = DEFAULT_TIMES;
+                    $scope.timeSelectedIndex = DEFAULT_TIME_INDEX;
 
                     setInitialObj($scope.mainObj);
 

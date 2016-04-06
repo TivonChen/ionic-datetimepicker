@@ -189,3 +189,6 @@ modify css to avoid time switch problem, modify close method, popup hide today w
 
 ### v0.5.0
 modify readme and config method.
+
+### v0.6.0
+reset time selection status when day selection changed.
