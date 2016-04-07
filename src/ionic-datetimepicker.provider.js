@@ -24,6 +24,10 @@ angular.module('ionic-datetimepicker.provider', [])
             {title: "下午", range: "14:00-18:00"}
         ];
         var DEFAULT_TIME_INDEX = -1;
+        var TIME_INDEX_MORNING = 0;
+        var TIME_INDEX_AFTERNOON = 1;
+        var DEFAULT_MORNING_TIME = 8;
+        var DEFAULT_AFTERNOON_TIME = 14;
 
         this.configDateTimePicker = function (inputObj) {
             angular.extend(config, inputObj);
@@ -73,6 +77,7 @@ angular.module('ionic-datetimepicker.provider', [])
                 //Date selected
                 $scope.dateSelected = function (selectedDate) {
                     if (!selectedDate || Object.keys(selectedDate).length === 0) return;
+                    if ($scope.selctedDateEpoch == selectedDate.epoch && !$scope.mainObj.closeOnSelect) return;
                     $scope.selctedDateEpoch = selectedDate.epoch;
 
                     $scope.currentTimeStatus = getCurrentTimeStatus();
@@ -107,9 +112,9 @@ angular.module('ionic-datetimepicker.provider', [])
                 }
 
                 function appendTimeToResult() {
-                    if ($scope.enableTimes && $scope.timeSelectedIndex >= 0) {
+                    if ($scope.enableTimes && $scope.timeSelectedIndex > DEFAULT_TIME_INDEX) {
                         var date = new Date($scope.selctedDateEpoch);
-                        var hour = $scope.timeSelectedIndex == 0 ? 8 : 14;
+                        var hour = $scope.timeSelectedIndex == TIME_INDEX_MORNING ? DEFAULT_MORNING_TIME : DEFAULT_AFTERNOON_TIME;
                         date.setHours(hour);
                         $scope.selctedDateEpoch = date.getTime();
                     }
@@ -291,6 +296,14 @@ angular.module('ionic-datetimepicker.provider', [])
 
                     $scope.times = DEFAULT_TIMES;
                     $scope.timeSelectedIndex = DEFAULT_TIME_INDEX;
+                    if ($scope.mainObj.enableTimes) {
+                        var hour = $scope.mainObj.inputDate.getHours();
+                        if (hour == DEFAULT_MORNING_TIME) {
+                            $scope.timeSelectedIndex = TIME_INDEX_MORNING;
+                        } else if (hour == DEFAULT_AFTERNOON_TIME) {
+                            $scope.timeSelectedIndex = TIME_INDEX_AFTERNOON;
+                        }
+                    }
 
                     setInitialObj($scope.mainObj);
 

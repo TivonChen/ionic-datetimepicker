@@ -192,3 +192,6 @@ modify readme and config method.
 
 ### v0.6.0
 reset time selection status when day selection changed.
+
+### v0.7.0
+inputDate support default time selection; if select current day and closeOnSelect set to 'false', nothing will be done.
